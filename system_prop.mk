@@ -25,11 +25,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.hwui.use_buffer_age=false \
-    debug.composition.type=c2d \
+    debug.composition.type=dyn \
     debug.mdpcomp.idletime=600 \
     persist.hwc.mdpcomp.enable=true \
     persist.hwc.ptor.enable=true \
     debug.enable.sglscale=1 \
+    ro.opengles.version=196608
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -45,7 +46,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.max_starting_bg=8 \
     ro.vendor.extension_library=libqti-perfd-client.so \
     ro.core_ctl_min_cpu=0 \
-    ro.core_ctl_max_cpu=4
+    ro.core_ctl_max_cpu=4 \
+    ro.min_freq_0=800000
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
