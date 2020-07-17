@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-PLATFORM_PATH := device/cyanogen/msm8916-common
+PLATFORM_PATH := device/haier/msm8909-common
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8909

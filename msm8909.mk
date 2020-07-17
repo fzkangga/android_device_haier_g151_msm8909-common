@@ -181,8 +181,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediaextractor-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy
 
 # System Properties
-$(call inherit-product, device/cyanogen/msm8916-common/system_prop.mk)
-$(call inherit-product, device/cyanogen/msm8916-common/system_prop_msm8909.mk)
+$(call inherit-product, device/haier/msm8909-common/system_prop.mk)
+$(call inherit-product, device/haier/msm8909-common/system_prop_msm8909.mk)
 
 # Trust HAL
 PRODUCT_PACKAGES += \
