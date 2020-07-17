@@ -34,7 +34,7 @@ PRODUCT_PACKAGES += \
     tinymix
 
 PRODUCT_PACKAGES += \
-    audio.primary.msm8916 \
+    audio.primary.msm8909 \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing
@@ -61,11 +61,11 @@ PRODUCT_COPY_FILES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    gralloc.msm8916 \
-    hwcomposer.msm8916 \
+    gralloc.msm8909 \
+    hwcomposer.msm8909 \
     libgenlock \
     libtinyxml \
-    memtrack.msm8916
+    memtrack.msm8909
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
@@ -113,7 +113,7 @@ PRODUCT_COPY_FILES += \
 # Keymaster
 ifneq ($(TARGET_PROVIDES_KEYMASTER),true)
 PRODUCT_PACKAGES += \
-    keystore.msm8916
+    keystore.msm8909
 endif
 
 PRODUCT_PACKAGES += \
@@ -182,7 +182,7 @@ PRODUCT_COPY_FILES += \
 
 # System Properties
 $(call inherit-product, device/cyanogen/msm8916-common/system_prop.mk)
-$(call inherit-product, device/cyanogen/msm8916-common/system_prop_msm8916.mk)
+$(call inherit-product, device/cyanogen/msm8916-common/system_prop_msm8909.mk)
 
 # Trust HAL
 PRODUCT_PACKAGES += \
