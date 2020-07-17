@@ -54,7 +54,7 @@ on late-fs
     start bootanim
     start vendor.gralloc-2-0
 
-    mount_all /vendor/etc/fstab.qcom --late
+    mount_all fstab.qcom --late
 
 on post-fs
     # Allow writing to the kernel trace log.
